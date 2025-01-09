@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+<body>
+  <div id="container">
+    <h1 id="title">Calculadora IMC</h1>
+   <div id="containerVal">
+    <table>
+      <thead>
+          <tr>
+              <th scope="col">IMC</th>
+              <th scope="col">Classificação</th>
+              <th scope="col">Obesidade(grau)</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <th scope="row" id='row1'> Menor que 18,5</th>
+            <td class='row1'>Magreza</td>
+            <td class='row1'>0</td>
+          </tr>
+          <tr>
+            <th scope="row" id="row2"> Entre 18,5 E 24,9</th>
+            <td class="row2">Normal</td>
+            <td class="row2">0</td>
+          </tr>
+          <tr>
+              <th scope="row" id="row3"> Entre 25 E 29,9 </th>
+              <td class="row3">Sobrepeso</td>
+              <td class="row3">I</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row4"> Entre 30 E 39,9 </th>
+              <td class="row4">Obesidade</td>
+              <td class="row4">II</td>
+            </tr>
+            <tr>
+              <th scope="row" id="row5"> Maior que 40 </th>
+              <td class="row5">Obesidade Grave</td>
+              <td class="row5">III</td>
+            </tr>
+      </tbody>
+  </table>
+    <form >
+    <label> Digite seu Peso (Ex: 90) </label>
+    <br>
+    <input type="number" id="valorPeso" class="valores" min="0" step="1">
+    <br>
+    <label> Digite sua Altura (Ex: 1,80) </label>
+    <br>
+    <input type="number" id="valorAltura"  class="valores" min="0" step="0.05">
+    <br>
+    <input type="button" value="Calcular" id="botao" onclick="Calcular()">
+    
+    </form>
+
+   </div>
+
+   <div id="resultado">Seu IMC: </div>
+
+    <p id="textInfo">Preencha as informações corretamente.</p>
+    
+  </div>
+    
+</body>
+<script src="script.js"></script>.
+</html>
